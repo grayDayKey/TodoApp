@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol TaskRepository {
+protocol TasksRepository {
     func fetchTasks() async throws -> [TaskEntity]
     func add(_ task: TaskEntity) async throws -> Void
     func remove(_ task: TaskEntity) async throws -> Void

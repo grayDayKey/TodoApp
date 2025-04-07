@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class InMemoryTaskRepository: TaskRepository {
+final class InMemoryTaskRepository: TasksRepository {
     private var tasks: [TaskEntity] = []
     
     func fetchTasks() async throws -> [TaskEntity] {
