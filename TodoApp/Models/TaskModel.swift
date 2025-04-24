@@ -1,14 +1,14 @@
 //
-//  TaskEntity.swift
+//  TaskModel.swift
 //  TodoApp
 //
-//  Created by Sergey on 03.04.2025.
+//  Created by Sergey on 20.04.2025.
 //
 
 import Foundation
 
-struct TaskEntity: Identifiable, Timestamped, Titled {
-    let id: String = UUID().uuidString
+struct TaskModel: Equatable, Identifiable, Timestamped {
+    let id: UUID = UUID()
     let createdAt: Date = Date()
     var updatedAt: Date? = nil
     private(set) var isCompleted: Bool = false
